@@ -1,13 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using System.Collections.Generic;
-using ExamenFinalReciclaje.Modelos;
 using System.Configuration;
 
 namespace ExamenFinalReciclaje.Servicios
 {
-    public class ReciclajeService : Datos.ConexionBD
+    public class ReciclajeService
     {
         // 1. Validar el Login de usuario
         public Usuario ValidarLogin(string correo, string contrasena)
